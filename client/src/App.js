@@ -13,6 +13,7 @@ import CalendarPage from './pages/CalendarPage';
 import TaskPage from './pages/TaskPage';
 import HomePage from './pages/HomePage';
 import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/LoginPage';
 
 class App extends React.Component {
   render() {
@@ -29,6 +30,7 @@ class App extends React.Component {
               <Route path="/about-us" component={AboutUsPage} />
               {/* Route to landing page for testing*/}
               <Route path="/landing" component={LandingPage} />
+              <Route path="/login" component={LoginPage} />
             </Switch>
           </div>
         </div>

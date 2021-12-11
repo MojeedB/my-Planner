@@ -12,7 +12,7 @@ function LandingNav() {
                     <Nav className="bg-primary mt-sm-1 ms-auto">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
-                                <NavLink className="nav-link" exact to="/landing">
+                                <NavLink className="nav-link" exact to="/login">
                                     Sign In
                                 </NavLink>
                             </li>
