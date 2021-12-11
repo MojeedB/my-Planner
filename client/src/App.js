@@ -1,56 +1,38 @@
 import React from 'react';
-import { 
-  BrowserRouter as Router, 
-  Switch, 
-  Route, 
-  Link,
-  NavLink
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
 } from 'react-router-dom';
-import PostsListPage from './pages/PostsListPage';
-import PostFormPage from './pages/PostFormPage';
-import ShowPostPage from './pages/ShowPostPage';
+
 import AboutUsPage from './pages/AboutUsPage';
 
-import './App.css';
-
-
-function Navigation(props) {
-  return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark shadow mb-3">
-      <Link className="navbar-brand" to="/">Micro Blog</Link>
-      <ul className="navbar-nav mr-auto">
-        <li className="nav-item">
-          <NavLink className="nav-link" exact to="/posts/new">
-            Create a Micro Post
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" exact to="/about-us">
-            About Us
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
-  );
-}
-
+// import './App.css';
+// import LandingPage from './pages/LandingPage';
+import CalendarPage from './pages/CalendarPage';
+import TaskPage from './pages/TaskPage';
+import HomePage from './pages/HomePage';
+import LandingPage from './pages/LandingPage';
 
 class App extends React.Component {
   render() {
     return (
-        <Router>
-          <Navigation />
-          <div className="container-fluid text-center">
-            <div className="row justify-content-center">
-              <Switch>
-                <Route path="/posts/new" component={PostFormPage} />
-                <Route path="/posts/:id" component={ShowPostPage} />
-                <Route path="/about-us" component={AboutUsPage} />
-                <Route path="/" component={PostsListPage} />
-              </Switch>
-            </div>
+      <Router>
+        {/* <LandingPage /> */}
+
+        <div className="container px-0 text-center">
+          <div className="row justify-content-center">
+            <Switch>
+              <Route path="/home" component={HomePage} />
+              <Route path="/task" component={TaskPage} />
+              <Route path="/calendar" component={CalendarPage} />
+              <Route path="/about-us" component={AboutUsPage} />
+              {/* Route to landing page for testing*/}
+              <Route path="/landing" component={LandingPage} />
+            </Switch>
           </div>
-        </Router>
+        </div>
+      </Router>
     );
   }
 }
