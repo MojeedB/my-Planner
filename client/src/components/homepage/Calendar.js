@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     Inject, ScheduleComponent, Day, Week, WorkWeek, Month, Agenda,
-    EventSettingsModel
+    // EventSettingsModel
 } from '@syncfusion/ej2-react-schedule';
 
 function Calendar() {

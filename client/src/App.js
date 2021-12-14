@@ -22,7 +22,7 @@ class App extends React.Component {
         {/* <LandingPage /> */}
 
         <div className="container px-0 text-center">
-          <div className="row justify-content-center">
+          <div className="row d-flex justify-content-center">
             <Switch>
               <Route path="/home" component={HomePage} />
               <Route path="/task" component={TaskPage} />
