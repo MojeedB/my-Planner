@@ -9,7 +9,7 @@ function HomePage() {
     return (
         <div>
             <Navigation />
-            This is the Home Page
+            {/* This is the Home Page */}
             <div className='row'>
                 {/* <div className='col'>
                     <Sidebar />

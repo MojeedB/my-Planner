@@ -7,7 +7,7 @@ function TaskPage() {
     return (
         <div>
             <Navigation />
-            This is the task page
+            {/* This is the task page */}
             <Task />
             <Footer />
         </div>

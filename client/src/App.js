@@ -21,7 +21,7 @@ class App extends React.Component {
       <Router>
         {/* <LandingPage /> */}
 
-        <div className="container px-0 text-center">
+        <div className="container px-0">
           <div className="row d-flex justify-content-center">
             <Switch>
               <Route path="/home" component={HomePage} />

@@ -23,7 +23,7 @@ function Navigation() {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" exact to="/calendar">
-                                    Calender
+                                    Calendar
                                 </NavLink>
                             </li>
                             <li className="nav-item">
@@ -32,11 +32,11 @@ function Navigation() {
                                 </NavLink>
                             </li>
                             {/* Route to landing for testing */}
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <NavLink className="nav-link" exact to="/landing">
                                     Landing
                                 </NavLink>
-                            </li>
+                            </li> */}
                         </ul>
                     </Nav>
                 </Navbar.Collapse>

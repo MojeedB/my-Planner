@@ -7,7 +7,7 @@ function CalendarPage() {
     return (
         <div>
             <Navigation />
-            This is the Calendar Page
+            {/* This is the Calendar Page */}
             <Calendar />
             <Footer />
         </div>

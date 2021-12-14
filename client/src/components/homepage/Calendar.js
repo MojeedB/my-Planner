@@ -6,8 +6,8 @@ import {
 
 function Calendar() {
     return (
-        <div>
-            This is the calendar bar
+        <div className='mt-4'>
+            {/* This is the calendar bar */}
             <ScheduleComponent currentView='Month'>
                 <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
             </ScheduleComponent>
